@@ -22,12 +22,12 @@ bool comp(node a , node b)
 return a.wt<b.wt;
 }
 
-int findPar(int u, vector<int> & parent)
+int findPar(int node, vector<int> & parent)
 {
-if(u == parent[node])
-return u;
+if(node == parent[node])
+return node;
 
-return findpar(parent[u], parent);
+return findpar(parent[node], parent);
 }
 
 void unionn(int u, int v, vector<int> & parent, vector<int> & rank)
