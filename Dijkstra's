@@ -91,7 +91,9 @@ for(auto it: adj[x.second])
 {
 if(dist[it[0]]> dist[x.second]+ it[1])
 {
+if(dis[it[0]!=INT_MAX)
 s.erase({dist[it[0]],it[0]});
+
 dist[it[0]]= dist[x.second]+ it[1];
 s.insert({dist[it[0]],it[0]});
 
