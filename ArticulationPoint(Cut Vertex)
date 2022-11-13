@@ -14,7 +14,7 @@ if(!vis[it])
 {
 dfs(it, node, vis,tin,low, timer, adj);
 low[node]= min(low[node], low[it]);
-if(low[it]>= tin[node] && parent==-1 )
+if(low[it]>= tin[node] && parent!=-1 )
 {
 cout<<node<<endl;
 }
