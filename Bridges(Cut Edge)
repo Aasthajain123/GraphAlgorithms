@@ -22,9 +22,6 @@ else
 {
 low[node] = min(low[node], tin[it]);
 
-
-
-
 }
 }
 }
